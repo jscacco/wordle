@@ -103,7 +103,7 @@ def check_word(guess, length, eliminated):
         if c in guess:
             contains_eliminated = True
 
-    return d.check("Hello") and len(guess) == length and not contains_eliminated
+    return d.check(guess) and len(guess) == length and not contains_eliminated
 
 
 def get_random_word(file="5words"):
